@@ -11,7 +11,7 @@ static NSString *snapshotDir(void) {
 		NSURL *base = [NSFileManager.defaultManager URLsForDirectory:NSApplicationSupportDirectory
 		                                                   inDomains:NSUserDomainMask]
 		                  .firstObject;
-		dir = [base URLByAppendingPathComponent:@"ascii-wallpaper/snapshots" isDirectory:YES].path;
+		dir = [base URLByAppendingPathComponent:@"towascii/snapshots" isDirectory:YES].path;
 		[NSFileManager.defaultManager createDirectoryAtPath:dir withIntermediateDirectories:YES attributes:nil error:nil];
 	}
 	return dir;
@@ -76,7 +76,7 @@ static void applySnapshot(uint32_t screenID, NSString *path) {
 	                                           forScreen:s
 	                                             options:opts
 	                                               error:&err]) {
-		NSLog(@"ascii-wallpaper: set desktop picture: %@", err);
+		NSLog(@"towascii: set desktop picture: %@", err);
 	}
 }
 
@@ -140,7 +140,7 @@ void awRestoreWallpaper(void) {
 			                                           forScreen:s
 			                                             options:@{}
 			                                               error:&err]) {
-				NSLog(@"ascii-wallpaper: restore desktop picture: %@", err);
+				NSLog(@"towascii: restore desktop picture: %@", err);
 			}
 		}
 		// The snapshot files stay: other Spaces may still reference them, and

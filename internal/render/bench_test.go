@@ -4,7 +4,7 @@ import (
 	"math/rand/v2"
 	"testing"
 
-	"ascii-wallpaper/internal/ocean"
+	"github.com/towiron/towascii/internal/ocean"
 )
 
 func BenchmarkFrame(b *testing.B) {

@@ -14,7 +14,7 @@ import (
 	"log/slog"
 	"unsafe"
 
-	"ascii-wallpaper/internal/render"
+	"github.com/towiron/towascii/internal/render"
 )
 
 type Action int

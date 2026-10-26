@@ -28,8 +28,8 @@ func (r *recorder) run(name string, args ...string) ([]byte, error) {
 func testAgent(t *testing.T, rec *recorder) Agent {
 	dir := t.TempDir()
 	return Agent{
-		Program:   "/Users/me/.local/bin/ascii-wallpaper",
-		LogPath:   filepath.Join(dir, "Logs", "ascii-wallpaper.log"),
+		Program:   "/Users/me/.local/bin/towascii",
+		LogPath:   filepath.Join(dir, "Logs", "towascii.log"),
 		PlistPath: filepath.Join(dir, "LaunchAgents", Label+".plist"),
 		UID:       501,
 		Run:       rec.run,
@@ -37,7 +37,7 @@ func testAgent(t *testing.T, rec *recorder) Agent {
 }
 
 func TestPlistGolden(t *testing.T) {
-	a := Agent{Program: "/Users/me/bin/ascii & wallpaper", LogPath: "/Users/me/Library/Logs/ascii-wallpaper.log"}
+	a := Agent{Program: "/Users/me/bin/ascii & wallpaper", LogPath: "/Users/me/Library/Logs/towascii.log"}
 	got := a.Plist()
 	path := filepath.Join("testdata", "agent.plist")
 	if *update {

@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"ascii-wallpaper/internal/ocean"
+	"github.com/towiron/towascii/internal/ocean"
 )
 
 var update = flag.Bool("update", false, "rewrite golden files")

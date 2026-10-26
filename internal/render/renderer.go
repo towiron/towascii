@@ -12,7 +12,7 @@ import (
 	"math"
 	"slices"
 
-	"ascii-wallpaper/internal/ocean"
+	"github.com/towiron/towascii/internal/ocean"
 )
 
 type ItemKind uint8

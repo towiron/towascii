@@ -1,6 +1,6 @@
-BIN     := bin/ascii-wallpaper
+BIN     := bin/towascii
 PREFIX  ?= $(HOME)/.local
-DEST    := $(PREFIX)/bin/ascii-wallpaper
+DEST    := $(PREFIX)/bin/towascii
 
 .PHONY: build run test lint install uninstall clean
 

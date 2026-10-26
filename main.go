@@ -13,10 +13,10 @@ import (
 	"syscall"
 	"time"
 
-	"ascii-wallpaper/internal/config"
-	"ascii-wallpaper/internal/launchd"
-	"ascii-wallpaper/internal/mac"
-	"ascii-wallpaper/internal/render"
+	"github.com/towiron/towascii/internal/config"
+	"github.com/towiron/towascii/internal/launchd"
+	"github.com/towiron/towascii/internal/mac"
+	"github.com/towiron/towascii/internal/render"
 )
 
 // Cocoa must run on the process's main thread, and only init is guaranteed
@@ -25,7 +25,7 @@ func init() {
 	runtime.LockOSThread()
 }
 
-const usage = `usage: ascii-wallpaper [command]
+const usage = `usage: towascii [command]
 
 commands:
   run        show the live wallpaper (default)
@@ -56,7 +56,7 @@ func main() {
 		os.Exit(2)
 	}
 	if err != nil {
-		fmt.Fprintln(os.Stderr, "ascii-wallpaper:", err)
+		fmt.Fprintln(os.Stderr, "towascii:", err)
 		os.Exit(1)
 	}
 }

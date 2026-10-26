@@ -30,7 +30,7 @@ func DefaultPath() (string, error) {
 	if err != nil {
 		return "", err
 	}
-	return filepath.Join(dir, "ascii-wallpaper", "config.json"), nil
+	return filepath.Join(dir, "towascii", "config.json"), nil
 }
 
 // Load returns the defaults when the file is missing. A corrupt file also

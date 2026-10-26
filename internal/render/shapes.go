@@ -3,7 +3,7 @@ package render
 import (
 	"math"
 
-	"ascii-wallpaper/internal/ocean"
+	"github.com/towiron/towascii/internal/ocean"
 )
 
 // Shape is the top-down body outline and fin layout of one kind. All values

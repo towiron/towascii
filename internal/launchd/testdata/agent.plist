@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.towiron.ascii-wallpaper</string>
+	<string>com.towiron.towascii</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/Users/me/bin/ascii &amp; wallpaper</string>
@@ -18,8 +18,8 @@
 	<key>ProcessType</key>
 	<string>Interactive</string>
 	<key>StandardOutPath</key>
-	<string>/Users/me/Library/Logs/ascii-wallpaper.log</string>
+	<string>/Users/me/Library/Logs/towascii.log</string>
 	<key>StandardErrorPath</key>
-	<string>/Users/me/Library/Logs/ascii-wallpaper.log</string>
+	<string>/Users/me/Library/Logs/towascii.log</string>
 </dict>
 </plist>

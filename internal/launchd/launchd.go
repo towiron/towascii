@@ -11,7 +11,7 @@ import (
 	"text/template"
 )
 
-const Label = "com.towiron.ascii-wallpaper"
+const Label = "com.towiron.towascii"
 
 // Runner executes a command and returns its combined output; tests replace it.
 type Runner func(name string, args ...string) ([]byte, error)
@@ -35,7 +35,7 @@ func NewAgent(program string) (Agent, error) {
 	}
 	return Agent{
 		Program:   program,
-		LogPath:   filepath.Join(home, "Library", "Logs", "ascii-wallpaper.log"),
+		LogPath:   filepath.Join(home, "Library", "Logs", "towascii.log"),
 		PlistPath: filepath.Join(home, "Library", "LaunchAgents", Label+".plist"),
 		UID:       os.Getuid(),
 		Run:       ExecRunner,

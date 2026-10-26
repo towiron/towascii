@@ -4,7 +4,7 @@ import (
 	"math"
 	"math/rand/v2"
 
-	"ascii-wallpaper/internal/ocean"
+	"github.com/towiron/towascii/internal/ocean"
 )
 
 const (
